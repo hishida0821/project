@@ -42,7 +42,7 @@ gulp.task("scss", function() {
       gulp
         .src('src/scss/*.scss')
         .pipe(sass())
-        .pipe(sass({outputStyle: 'expanded'}))
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(autoprefixer({
           cascade: false,
           grid: true
